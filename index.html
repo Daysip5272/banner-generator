@@ -8,13 +8,47 @@
     <script>
         $(function() {
 
-        });
+            $('button').click(function() {
+                var bodybackground = $('#background').val();
+                $('body').css('background-color', bodybackground);
 
+            });
+
+            $('button').click(function() {
+                var favoritecolor = $('#color').val();
+                var name = $('#name').val();
+                $("p").html(
+                    name + " favorite " + favoritecolor + ". "
+                );
+
+
+            });
+            $('button').click(function() {
+                $('h3').fadeOut(2000);
+                $('input').fadeOut(2000);
+            });
+        });
     </script>
 </head>
 
 <body>
+    <center>
+        <h3>Name:</h3>
+        <input id="name">
+        <br>
+        <h3>Background Color:</h3>
+        <input id="background">
+        <br>
+        <h3>Favorite color:</h3>
+        <input id="color">
+        <br>
+        <br>
+        <button>
+            <h3>CHECK IT OUT!</h3></button>
+        <p></p>
+    </center>
 
-</body>
+    <body style="background-color: #ff9999;">
+    </body>
 
 </html>
