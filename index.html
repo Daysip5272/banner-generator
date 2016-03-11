@@ -8,28 +8,28 @@
     <script>
         $(function() {
 
-            $('button').click(function() {
-                var bodybackground = $('#background').val();
-                $('body').css('background-color', bodybackground);
-
-            });
+            $('button').click(function() { //when button is click the code bellows start working.
+                var bodybackground = $('#background').val(); //given a name with the Id of input of background color.
+                $('body').css('background-color', bodybackground); // it changes color to the body depending on the user choicen color.
+            });// css gives a chenge in the backgrund color
 
             $('button').click(function() {
                 var favoritecolor = $('#color').val();
                 var name = $('#name').val();
-                $("p").html(
-                    name + " favorite " + favoritecolor + ". "
+                $("p").html( // creates change in the with in the context
+                    name + " favorite color is " + favoritecolor + ". " // the sentence is been created with the name of the ID`s
                 );
-
-
             });
             $('button').click(function() {
                 $('h3').fadeOut(2000);
-                $('input').fadeOut(2000);
+                $('input').fadeOut(2000); //use to make things fade after being click  
             });
+            
         });
     </script>
 </head>
+
+
 
 <body>
     <center>
